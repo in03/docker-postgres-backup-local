@@ -34,7 +34,7 @@ jobs:
           BUILDREV: ${{ steps.vars.outputs.sha_short }}
         run: docker buildx bake --pull
 
-      - name: Push images
-        env:
-          BUILDREV: ${{ steps.vars.outputs.sha_short }}
-        run: docker buildx bake --push
+      # - name: Push images
+      #   env:
+      #     BUILDREV: ${{ steps.vars.outputs.sha_short }}
+      #   run: docker buildx bake --push

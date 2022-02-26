@@ -7,7 +7,7 @@ variable "BUILDREV" {
 }
 
 target "common" {
-	platforms = ["linux/amd64", "linux/arm64", "linux/arm/v7", "linux/s390x", "linux/ppc64le"]
+	platforms = ["linux/arm/v7"]
 	args = {"GOCRONVER" = "v0.0.10"}
 }
 

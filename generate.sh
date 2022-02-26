@@ -5,7 +5,7 @@ set -e
 DOCKER_BAKE_FILE=${1:-"docker-bake.hcl"}
 TAGS=${TAGS:-"14 13 12 11 10"}
 GOCRONVER=${GOCRONVER:-"v0.0.10"}
-PLATFORMS=${PLATFORMS:-"linux/amd64 linux/arm64 linux/arm/v7 linux/s390x linux/ppc64le"}
+PLATFORMS=${PLATFORMS:-"linux/arm/v7"}
 IMAGE_NAME=${IMAGE_NAME:-"prodrigestivill/postgres-backup-local"}
 
 cd "$(dirname "$0")"
